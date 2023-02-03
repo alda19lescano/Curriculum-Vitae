@@ -1,0 +1,443 @@
+body {
+    background-color: rgb(238, 226, 226);
+    /**background-color: #EFE9E4;
+    text-align: center;*/
+    padding: 0;
+    top: 0;
+}
+
+p {
+    font-size: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    
+}
+
+/**portada de la página*/
+#inicio{
+    position: relative;
+    background-image: url(./img_proyecto/Aldu.png);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+header {
+position: fixed;
+width: 100%;
+display: flex;
+justify-content: space-between;
+transition: 0.8s;
+padding: 30px 15px;
+z-index: 100;
+}
+
+#logo {
+    margin-top: 13px;
+    text-decoration: underline;
+    font-size: 22px;
+    margin-left: 60px;
+    font-family:Helvetica;
+    font-weight: bold;
+    position: relative;
+    color: rgb(102, 98, 98);
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+}
+.abajo{
+    background-color:rgb(237, 203, 203);
+    padding:10px
+}
+
+header.abajo #logo {
+    color: #ed818192;
+    text-decoration: none;
+}
+
+header.abajo .navbar-toggler:focus{
+    color: #ed818192;
+}
+#barra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+}
+
+.nav-item {
+    font-size: 20px;
+    margin-right: 26px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+    color: #ed8181;
+}
+
+/**titulo de cada apartado*/
+.titulo {
+    display: flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items: center;
+    padding: 20px;
+    font-size: 50px;
+    color:#ed818192;
+    font-family: 'Bebas Neue', cursive;
+    word-spacing: 8px;
+    text-decoration: underline;
+}
+
+/**seccion sobre mi: datos personales y hobbies*/
+#sobre_mi {
+    padding-top: 100px;
+    padding-bottom: 0%;
+    max-width: 1100px;
+    width: 65%;
+    margin: auto;
+}
+
+#sobre_mi .fila {
+    display: flex;
+}
+
+#sobre_mi p {
+    margin-bottom: 50px;
+}
+
+#sobre_mi .fila {
+    border: 2px solid #ed8181c2;
+    border-radius: 10px;
+    background-color: #ed8181b3;
+
+}
+
+#sobre_mi .fila .col {
+    width: 50%;
+}
+#sobre_mi .fila .col h4{
+    font-size: 30px;
+    color:#ffffffc1;
+    font-family: 'Bebas Neue', cursive;
+    word-spacing: 3px;
+    
+}
+#sobre_mi .fila .col ul{
+ list-style: none;
+}
+
+#sobre_mi .fila .col ul li{
+    margin: 15px 0;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#sobre_mi .fila .col ul li strong{
+    display: inline-block;
+}
+
+#sobre_mi .fila .col .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#sobre_mi .fila .col .contenedor .hobbies{
+    width: 100px;
+    height: 100px;
+    background-color:rgb(238, 226, 226) ;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+
+#sobre_mi .fila .col .contenedor .hobbies:hover {
+    background-color: rgb(250, 243, 243);
+}
+
+#sobre_mi .fila .col .contenedor .hobbies i {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+#sobre_mi #datos h4 {
+    margin-left: 6%;
+}
+
+
+.redes {
+    display: none;
+    padding-top: 20px;
+    justify-content: center;
+    margin: auto;
+}
+
+.boton_redes{
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+#separar{
+    padding-top: 20px;
+}
+/**seccion de habilidades*/
+
+.skills {
+    padding-top: 100px;
+    padding-bottom: 0%;
+    max-width: 1100px;
+    width: 65%;
+    margin: auto;
+}
+
+.skills .fila {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.462);
+    border: 5px solid rgba(255, 255, 255, 0.462);
+}
+
+.skills .fila .col {
+    width: 50%;
+    padding: 0 20px 0 20px;
+    margin: auto;
+    margin-left: 6%;
+}
+
+.skills .fila .col h4{
+    font-size: 30px;
+    color:#ed818192;
+    font-family: 'Bebas Neue', cursive;
+    word-spacing: 3px;
+}
+
+.skills .skill span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+.skills .skill .barra_progreso{
+    height: 13px;
+    width: 80%;
+    background-color: rgb(238, 226, 226);
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.skills .skill .porcentaje{
+    background-color: #ed8181;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 13px;
+}
+#soft_skills .fila .col ul{
+    list-style: none;
+}
+
+
+/**animacion de la barra de progreso*/
+
+.skills .skill .barra_progreso span{
+    position: absolute;
+    height: 33px;
+    width: 40px;
+    background-color: #ed8181;
+    line-height: 35px;
+    text-align: center;
+    top: -11px;
+    right: -15px;
+    font-size: 14px;
+}
+
+.skills .skill .html{
+    width: 0%;
+    animation: 3s html forwards;
+}
+
+@keyframes html {
+    0%{width: 0%;}
+    100%{width: 90%;}
+}
+.skills .skill .css{
+    width: 0%;
+    animation: 3s css forwards;
+}
+
+@keyframes css {
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+
+.skills .skill .javascript{
+    width: 0%;
+    animation: 3s javascript forwards;
+}
+
+@keyframes javascript {
+    0%{width: 0%;}
+    100%{width: 15%;}
+}
+
+.skills .skill .ingles{
+    width: 0%;
+    animation: 3s ingles forwards;
+}
+
+@keyframes ingles {
+    0%{width: 0%;}
+    100%{width: 70%;}
+}
+
+/**otras skills*/
+
+#comunicacion {
+    padding-top: 40px;
+}
+
+#soft_skills ul{
+    list-style: none;
+    padding: 0;
+    margin-left: 0px;
+}
+
+#soft_skills ul li{
+    margin: 15px 0;
+    font-size: 20px;
+}
+
+#soft_skills {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    
+}
+#soft_skills h4{
+    padding-top: 10px;
+}
+
+#soft_skills li {
+    text-decoration: underline #ed8181;
+}
+
+/**seccion sobre estudios*/
+
+#estudios {
+    padding-top: 100px;
+}
+#estudios h4 {
+    padding-top: 10px;
+    margin: 0%;
+    font-size: 30px;
+    color:#ed818192;
+    font-family: 'Bebas Neue', cursive;
+    word-spacing: 3px;
+}
+
+.formacion span {
+    width: 50%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.462);
+    border: 5px solid rgba(255, 255, 255, 0.462);
+}
+
+.formacion i{
+    padding-bottom: 15px;
+}
+
+.formacion strong{
+    font-size: 20px;
+}
+#educacion{
+    padding-bottom: 5px;
+}
+
+.fa-regular{
+    padding-right: 5px;
+}
+
+.fa-solid {
+    padding-right: 5px;
+}
+
+
+/**seccion de contacto*/
+
+#contacto{
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+#contacto p{
+    display: flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items: center;
+}
+
+.formulario {
+    display: flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items: center;
+    margin: auto;
+    width: 30%;
+    
+}
+
+#contacto div {
+    padding-bottom: 10px;
+}
+
+#boton:active{
+    background-color: rgba(238, 133, 133, 0.462);
+}
+
+#boton{
+    display: flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items: center;
+    margin: auto;
+}
+
+form input{
+    border: 5px solid rgba(238, 133, 133, 0.462);
+}
+form .mensaje{
+    border: 5px solid rgba(238, 133, 133, 0.462);
+}
+/**.centro {
+    display: flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items: center;
+}*/
+
+/**footer*/
+
+.text-center {
+    background-color: rgba(244, 196, 196, 0.911)
+}
+#copy{
+    background-color: rgb(236, 182, 182);
+}
+
+
+footer img{
+    width: 30px;
+    height: 30px;
+}

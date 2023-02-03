@@ -1,0 +1,7 @@
+#boton:active {background-color: yellow;
+}
+
+.formulario:focus {border: 5px solid green;
+width: 1000px;}
+
+#je:hover {background-color: red;}
